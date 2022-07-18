@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
         if (Input.anyKey)
         {
             var vector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            _player.PlayerDirection = _player.GetDirectionFromVector(vector);
             _player.Move(ref vector);
         }
     }
